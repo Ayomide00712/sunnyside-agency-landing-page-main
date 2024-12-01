@@ -81,7 +81,6 @@ ul .last{
     position: absolute;
     left: 50%;
     top: 40%;
-    /* transform: translate(-50%, -50%); */
 }
 .responsive-li{
     display: flex;
@@ -181,7 +180,7 @@ ul .last{
     width: 100%;
     position: relative;
 }
-.card .text-overlay{
+ .text-overlay{
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -190,13 +189,13 @@ ul .last{
 
 }
 .text-overlay h3{
-    font-size: 3rem;
+    font-size: 25px;
     color: hsl(212, 27%, 19%);
     margin-bottom: 15px;
 }
 .text-overlay p{
     
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     font-family: "Barlow", sans-serif;
     margin-bottom: 10px;
@@ -233,7 +232,7 @@ ul .last{
 }
 
 .sec3-text-content p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     font-family: "Barlow", sans-serif;
     margin-bottom: 30px;
@@ -244,11 +243,11 @@ ul .last{
     text-align: center;
 }
 .owner h2{
-font-size: 2rem;
+font-size: 20px;
 margin-bottom: 5px;
 }
 .owner p{
-    font-size: 1.4rem;
+    font-size: 16px;
     font-weight: 400;
     font-family: "Barlow", sans-serif;
 }
@@ -300,12 +299,12 @@ margin-bottom: 5px;
 .show{
     display: block;
 }
-@media(min-width: 375px){
+@media(max-width: 375px){
     .head-text h2{
         font-size: 1rem;
     }
-    .card .text-overlay{
-        bottom: 10px;
+    .text-overlay h3{
+        font-size: 1rem;
     }
 }
 
@@ -334,22 +333,23 @@ margin-bottom: 5px;
     .sec3-card{
         flex-direction: column;
     }
-    .card .text-overlay{
-        bottom: 10px;
+     .text-overlay{
+        bottom: 0;
     }
     .image-content{
         margin-bottom: 30px;
     }
+    
     .sec3-text-content p{
         margin-bottom: 20px;
     }
     .text-overlay h3{
-        font-size: 2rem;
+        font-size: 25px;
     }
     .text-overlay p{
         font-size: 1rem;
     }
-
+    
 }
 @media(max-width: 850px){
 
@@ -374,6 +374,10 @@ margin-bottom: 5px;
     .left,.right{
         flex-basis: 100%;
     }
+    .text-overlay{
+        bottom: 0;
+        left: 50%;
+    }
     .sec3-card{
         flex-direction: column;
     }
@@ -390,7 +394,4 @@ margin-bottom: 5px;
         display: block;
         width: 30px;
     }
-    /* .head-text h2{
-        font-size: 3rem;
-    } */
 }
